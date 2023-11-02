@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "609519729325",
+    "project_id": "notification-app-7145a",
+    "storage_bucket": "notification-app-7145a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609519729325:android:369a919040f59a28eca424",
+        "android_client_info": {
+          "package_name": "kz.just_code.notificationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9uNFMZ0c8dB4Qd3KSxR100b3eQllabjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
