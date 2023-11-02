@@ -1,7 +1,6 @@
 package kz.just_code.notificationapp
 
 import android.Manifest
-import android.app.NotificationManager
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
@@ -24,19 +23,6 @@ class MainActivity : AppCompatActivity() {
             if (!allPermissionGranted()) {
                 pushPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
             }
-        }
-
-        val notificationManage = MyNotificationManager(this)
-        binding.showBtn.setOnClickListener {
-            notificationManage.showMessage(this)
-        }
-
-        binding.hideBtn.setOnClickListener {
-            notificationManage.clear()
-        }
-
-        if (intent.hasExtra("ACTION")) {
-            Toast.makeText(this, intent.getStringExtra("ACTION"), Toast.LENGTH_SHORT).show()
         }
     }
 

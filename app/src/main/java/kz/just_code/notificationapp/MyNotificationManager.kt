@@ -105,8 +105,10 @@ class MyNotificationManager(context: Context) {
         } else ""
     }
 
-    fun clear() {
-
+    fun clear(context: Context) {
+        val manager =
+            context.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+        manager.cancelAll()
     }
 }
 
